@@ -1,0 +1,139 @@
+@import "../../variables.scss";
+
+.shipping-cart-div{
+    @include resetSpacing();
+    @include flexColumns();
+    height: 91vh;
+    
+    .div-state-shipping{
+        @include resetSpacing();
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 1%;
+        display: flex;
+        justify-content: space-between;
+        .ship-cart-p{
+            font-size: $fontSizeMeduim1;
+            font-family: $poppinsFont;
+            font-weight: bold;
+            color: $colorBlack;
+            width: 50%;
+        }
+        .div-state-imgs{
+            width: 50%;
+            @include flexCenterEnd();
+            .img-orange{
+                padding: 1.2%;
+                border-radius: 50%;
+                background-color: $colorOrange;
+            }
+            .thin-line{
+                margin: 2%;
+                width: 14%;
+                height: 1px;
+                background-color: $navBackgroundColor;
+            }
+            img{
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+    
+    .details-columns{
+        @include resetSpacing();
+        text-align: center;
+        margin-top: 6%;
+        margin-left: 10%;
+        margin-right: 20%;
+        display: grid;
+        grid-template-columns: 38% 9% 3% 14% 5%;
+        gap: 8%;
+        p{
+            @include resetSpacing();
+            font-family: $poppinsFont;
+            font-size: $fontSizeTiny;
+            color: $colorGray3;
+            font-weight: normal;
+        }
+    }
+    .footer-div{
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        @include flexCenterStart();
+        .back-div{
+            margin: 0;
+            padding: 0;
+            margin-right: 35%;
+            @include flexCenterStart();
+            width: 15%;
+            img {
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+            p {
+                margin-left: 10%;
+                font-size: $fontSizeTiny;
+                font-weight: bold;
+                font-family: $poppinsFont;
+                color: $colorBlack;
+            }
+        }
+        .promo-div{
+            width: 20%;
+            height: 50px;
+            border: 1px solid $colorGray4;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 5%;
+            input{
+                font-size: $fontSizeTiny;
+                font-family: $poppinsFont;
+                color: $colorGray5;
+                margin-left: 10%;
+                border: 0;
+                &:focus{
+                    outline: none;
+                }
+            }
+            img{
+                margin-right: 10%;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+        .total-cost-p{
+            width: 8%;
+            font-size: $fontSizeSmall;
+            font-family: $poppinsFont;
+            font-weight: lighter;
+            margin-right: 3%;   
+        }
+        .cost-p{
+            font-size: $fontSizeSmall;
+            font-family: $poppinsFont;
+            font-weight: bold;
+            margin-right: 6%;   
+        }
+        .checkout-btn{
+            width: 15%;
+            height: 49px;
+            padding-right: 1%;
+            padding-left: 1%;
+            border-radius: 20px;
+            border: 0px;
+            font-size: $fontSizeTiny;
+            font-family: $poppinsFont;
+            font-weight: bold;
+            background-color: $colorOrange;
+        }
+    }
+}

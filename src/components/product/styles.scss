@@ -1,0 +1,82 @@
+@import "../../variables.scss";
+
+.item-product{
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    //height: 6%;
+    grid-template-columns: 34% 4.5% 3.7% 9.5% 5.2% 3.4%;
+    gap: 8%;
+    p{
+        //@include resetSpacing();
+        font-family: $poppinsFont;
+        font-size: $fontSizeTiny;
+        color: $colorBlack;
+        font-weight: normal;
+    }
+    .price-p{
+        font-size: $fontSizeSmall;
+        font-weight: bold;
+    }
+    .cancel-btn{
+        font-size: $fontSizeSmall;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    .amount-div{
+        height: 70%;
+        border: 1px solid $colorGray4;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 18%;
+        padding-right: 18%;
+        .add-btn{
+            cursor: pointer;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+        .minus-btn{
+            cursor: context-menu;
+            color: $colorGray4;
+        }
+        p{
+            font-size: $fontSizeSmall;
+            font-weight: bold;
+        }
+        
+    }
+    .item-info-div{
+        @include flexCenterStart();
+        .item-name-div{
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            p{
+                @include resetSpacing();
+                font-family: $poppinsFont;
+            }
+            .name-p{
+                font-size: $fontSizeSmall;
+                font-weight: bold;
+                color: $colorBlack;
+            }
+            .color-p{
+                font-size: $fontSizeTiny;
+                font-weight: lighter;
+                color: $colorGray3;
+            }
+        }
+    }
+}
+
