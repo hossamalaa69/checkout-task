@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+
+.product-cart-preview{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 70% 25%;
+    column-gap: 5%;
+    grid-row: 65px;
+    .avatar-item-div{
+        @include flexCenterStart();
+        .item-name-div{
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            p{
+                @include resetSpacing();
+                font-family: $poppinsFont;
+            }
+            .name-p{
+                font-size: $fontSizeSmall;
+                font-weight: bold;
+                color: $colorBlack;
+            }
+            .color-p{
+                font-size: $fontSizeTiny;
+                font-weight: lighter;
+                color: $colorGray3;
+            }
+        }
+    }
+    .item-price-p{
+        text-align: center;
+        font-size: $fontSizeTiny;
+        font-family: $poppinsFont;
+        font-weight: bold;
+    }
+}

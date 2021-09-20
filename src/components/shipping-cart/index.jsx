@@ -7,6 +7,10 @@ import ImageBackArrow from "../../images/back.png"
 import ImageSendArrow from "../../images/arrow.png"
 
 class ShippingCart extends Component {
+
+    openPayment = () => {
+        this.props.openPayment();
+    }
     render() { 
         return (
             <div className="shipping-cart-div">
@@ -37,7 +41,7 @@ class ShippingCart extends Component {
                     </div>
                     <p className="total-cost-p">Total Cost</p>
                     <p className="cost-p">$159.98</p>
-                    <button className="checkout-btn">CHECKOUT</button>
+                    <button className="checkout-btn" onClick={this.openPayment}>CHECKOUT</button>
                 </div>
             </div>
         );

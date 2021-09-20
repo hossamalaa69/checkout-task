@@ -69,11 +69,9 @@
             margin-right: 35%;
             @include flexCenterStart();
             width: 15%;
-            img {
-                cursor: pointer;
-                &:hover{
-                    opacity: 0.5;
-                }
+            cursor: pointer;
+            &:hover{
+                opacity: 0.5;
             }
             p {
                 margin-left: 10%;
@@ -98,6 +96,9 @@
                 color: $colorGray5;
                 margin-left: 10%;
                 border: 0;
+                padding: 0;
+                margin-top: 0;
+                margin-bottom: 0;
                 &:focus{
                     outline: none;
                 }
@@ -134,6 +135,10 @@
             font-family: $poppinsFont;
             font-weight: bold;
             background-color: $colorOrange;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.5;
+            }
         }
     }
 }

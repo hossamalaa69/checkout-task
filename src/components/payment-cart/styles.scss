@@ -1,0 +1,280 @@
+@import "../../variables.scss";
+
+.payment-cart-div{
+    @include resetSpacing();
+    @include flexColumns();
+    height: 91vh;
+    .state-payment-div{
+        @include resetSpacing();
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 1%;
+        display: flex;
+        justify-content: space-between;
+        .pay-cart-p{
+            font-size: $fontSizeMeduim1;
+            font-family: $poppinsFont;
+            font-weight: bold;
+            color: $colorBlack;
+            width: 50%;
+        }
+        .div-state-pay-imgs{
+            width: 50%;
+            @include flexCenterEnd();
+            .img-orange-border{
+                padding: 1.2%;
+                border-radius: 50%;
+                border: 1px solid $colorOrange;
+                width: 25px;
+                height: 25px;
+            }
+            .thin-line{
+                margin: 2%;
+                width: 14%;
+                height: 1px;
+                background-color: $navBackgroundColor;
+            }
+            .img-orange-white{
+                padding: 1.2%;
+                border-radius: 50%;
+                background-color: $colorOrange;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    .grid-shipping{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 42% 25% 21%;
+        grid-template-rows: 390px;
+        gap: 6%;
+        .column1{
+            @include flexColumns();
+            .user-managment-div{
+                @include flexCenterStart();
+                button{
+                    width: 20%;
+                    height: 49px;
+                    padding-right: 1%;
+                    padding-left: 1%;
+                    border-radius: 20px;
+                    font-size: $fontSizeTiny;
+                    font-family: $poppinsFont;
+                    font-weight: bold;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+                .btn-login{
+                    background-color: $colorOrange;
+                    border: 0;
+                }
+                .btn-signup{
+                    background-color: white;
+                    margin-left: 2%;
+                    border: 1px solid $colorGray4;
+                }
+            }
+            .inputs-div{
+                margin-top: 38px;
+                @include flexColumns();
+                .header-inputs{
+                    font-size: $fontSizeTiny;
+                    font-family: $poppinsFont;
+                    font-weight: bold;
+                    @include resetSpacing();
+                }
+                .buttons-grid{
+                    margin-top: 15px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 50px 50px 50px 50px;
+                    column-gap: 5%;
+                    row-gap: 20px;    
+                    .rounded-input{
+                        border: 1px solid $colorGray4;
+                        border-radius: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        input{
+                            font-size: $fontSizeSmall;
+                            font-family: $poppinsFont;
+                            color: $colorGray5;
+                            margin-left: 10%;
+                            border: 0;
+                            padding: 0;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .column2{
+            @include flexColumns();
+            .header-inputs{
+                font-size: $fontSizeTiny;
+                font-family: $poppinsFont;
+                font-weight: bold;
+                @include resetSpacing();
+            }
+            .grid-payment-method{
+                margin-top: 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 45px 45px;
+                column-gap: 6px;
+                row-gap: 8px;
+                .rounded-div-payment{
+                    border: 1px solid $colorGray4;
+                    border-radius: 20px;
+                    @include flexCenter();
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+            }
+            .header-delivery-methods{
+                @include resetSpacing();
+                margin-top: 45px;
+                font-size: $fontSizeTiny;
+                font-family: $poppinsFont;
+                font-weight: bold;
+            }
+            .grid-delivery-method{
+                margin-top: 23px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 55px 55px;
+                column-gap: 8px;
+                row-gap: 9px;
+                .rounded-div-delivery{
+                    border: 1px solid $colorGray4;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-left: 13%;
+                    padding-right: 13%;
+                    p{
+                        @include resetSpacing();
+                        font-size: $fontSizeTiny;
+                        font-family: $poppinsFont;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .column3{
+            //background-color: purple;
+            @include flexColumns();
+            .header-your-cart{
+                @include resetSpacing();
+                font-size: $fontSizeTiny;
+                font-family: $poppinsFont;
+                font-weight: bold;
+            }
+            .cost-order-div{
+                @include flexCenterColumns();
+                align-items: center;
+                margin-top: 30px;
+                .rounded-cost-div{
+                    height: 50px;
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 30px;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    background-color: $colorWhiteSmoke;
+                    p{
+                        font-size: $fontSizeSmall;
+                        font-family: $poppinsFont;
+                    }
+                    .total-cost-order-p{
+                        font-weight: lighter;
+                    }
+                    .cost-order-p{
+                        font-weight: bold;
+                    }
+                }
+                .delivery-cost-div{
+                    margin-top: 57px;
+                    width: 80%;
+                    @include flexCenterStart();
+                    p{
+                        margin-left: 10%;
+                        font-size: $fontSizeTiny;
+                        font-family: $poppinsFont;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+    }
+    .footer-payment-cart{        
+        margin-top: 9%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        .back-div{
+            margin: 0;
+            padding: 0;
+            @include flexCenterStart();
+            cursor: pointer;
+            &:hover{
+                opacity: 0.5;
+            }
+            p {
+                margin-left: 10%;
+                font-size: $fontSizeTiny;
+                font-weight: bold;
+                font-family: $poppinsFont;
+                color: $colorBlack;
+            }
+        }
+        .btns-footer{
+            @include flexCenterEnd();
+            button{
+                width: 220px;
+                height: 49px;
+                padding-right: 1%;
+                padding-left: 1%;
+                margin-left: 2%;
+                border-radius: 20px;
+                font-size: $fontSizeTiny;
+                font-family: $poppinsFont;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.5;
+                }
+                background-color: white;        
+            }
+            .continue-shopping-btn{
+                border: 1px solid $colorGray4;
+            }
+            .proceed-btn{
+                background-color: $colorOrange;
+                border: 0;
+            }
+        }
+    }
+
+}
