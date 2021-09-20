@@ -20,6 +20,11 @@ import ImageBackArrow from "../../images/back.png"
 
 
 class PaymentCart extends Component {
+
+    handleBackPress = () =>{
+        this.props.handleBackPress();
+    }
+
     render() { 
         return (
             <div className="payment-cart-div">
@@ -98,7 +103,7 @@ class PaymentCart extends Component {
                     </div>
                 </div>
                 <div className="footer-payment-cart">
-                    <div className="back-div">
+                    <div className="back-div" onClick={this.handleBackPress}>
                         <img src={ImageBackArrow} alt="Back Arrow"></img>
                         <p>Back</p>
                     </div>

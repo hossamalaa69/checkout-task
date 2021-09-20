@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ShippingCart from '../../components/shipping-cart';
+import ShippingCart from '../../components/shopping-cart';
 
 class Checkout1 extends Component {
     openPayment = ()=>{

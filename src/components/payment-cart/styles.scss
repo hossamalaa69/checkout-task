@@ -51,6 +51,13 @@
         grid-template-columns: 42% 25% 21%;
         grid-template-rows: 390px;
         gap: 6%;
+        
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 390px);
+            gap: 10px;
+        }
+
         .column1{
             @include flexColumns();
             .user-managment-div{
@@ -94,7 +101,7 @@
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: 50px 50px 50px 50px;
                     column-gap: 5%;
-                    row-gap: 20px;    
+                    row-gap: 20px;                
                     .rounded-input{
                         border: 1px solid $colorGray4;
                         border-radius: 20px;
@@ -251,12 +258,18 @@
         }
         .btns-footer{
             @include flexCenterEnd();
+            @media (max-width: 1200px) {
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+    
             button{
                 width: 220px;
                 height: 49px;
                 padding-right: 1%;
                 padding-left: 1%;
                 margin-left: 2%;
+                margin-top: 10px;
                 border-radius: 20px;
                 font-size: $fontSizeTiny;
                 font-family: $poppinsFont;
