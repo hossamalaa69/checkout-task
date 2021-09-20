@@ -9,7 +9,7 @@ In the application, we retrieve the cart items to be purchased by checking first
 
 ## ScreenShots for Full Screen Web
 ### Page1
-![alt text](https://github.com/hossamalaa69/checkout-task/blob/master/snapshots/page1.png?raw=true)
+![alt text](https://github.com/hossamalaa69/checkout-task/blob/main/snapshots/page1.png?raw=true)
 ### Page2
 ![alt text](https://github.com/hossamalaa69/checkout-task/blob/master/snapshots/page2.png?raw=true)
 
