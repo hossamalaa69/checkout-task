@@ -32,16 +32,17 @@ In the application, we retrieve the cart items to be purchased by checking first
 ## App Components
 
 
-### 1- home-preview: shows a carousal for products of the store
-### 2- products-grid: contains the grid system of all products
+### 1- shopping-cart: shows the whole components of checkout page1
+### 2- products-list: contains the list of all products in cart
 ### 3- product: contains the card item for the product
-### 4- details-product-description: shows all deatailed descriptional info about the product
-### 5- details-product-image: shows a landscape image of the product with its main info
-### 6- navbar: shows the links to diffrenet pages
+### 4- payment-cart: shows all components in checkout page2
+### 5- product-preview: contains the cart of the product in page2 design
+### 6- product-preview-grid: contains the list of all products in cart to be purchased
+### 7- navbar: shows the links to diffrenet pages
 
 ## App Pages
-### 1-Home: View products list, and the quick preview.
-### 2-ProductDetails: View the product itself.
+### 1-Page1: View products list, to be reviewed before payment.
+### 2-Page2: View all available payment and shipment methods.
 
 
 ## Available Scripts
